@@ -1,0 +1,31 @@
+<?php
+// $Id: geslib_admin.install
+
+/**
+* Implementation of hook_enable()
+*/
+function geslib_admin_enable() {
+}
+
+/**
+* Implementation of hook_disable()
+*/
+function geslib_admin_disable() {
+}
+
+/**
+* Implementation of hook_install()
+*/
+function geslib_admin_install() {
+  # Configure default geslib_admin vars
+  variable_set('geslib_upload_path', NULL);
+}
+
+/**
+* Implementation of hook_uninstall()
+*/
+function geslib_admin_uninstall() {
+  # Clear geslib_admin vars
+  variable_del('geslib_upload_path');
+}
+

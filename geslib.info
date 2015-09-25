@@ -1,0 +1,7 @@
+; $Id$
+name = Geslib Integration 
+description = Geslib data import/export module.
+core = 6.x
+version = "6.x-0.3"
+dependencies[] = uc_product 
+package = "Ubercart - extra" 
